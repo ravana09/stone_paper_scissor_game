@@ -1,0 +1,60 @@
+/* Game.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+  }
+  
+  .game-container {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%;
+  }
+  
+  .game-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .result-column {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #f0f0f0;
+  }
+  
+  .weapon-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .weapon-button img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
+  
+  .weapon-button img:hover {
+    transform: scale(1.1);
+  }
+  
+  .result {
+    font-size: 24px;
+    color: #007BFF;
+    margin-top: 20px;
+  }
+  
+  .player-info {
+    margin: 20px 0;
+  }
+  

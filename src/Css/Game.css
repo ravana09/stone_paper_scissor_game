@@ -4,26 +4,46 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 100vh;
   }
   
   .game-container {
-    display: flex;
+    /* display: flex; */
     background-color: #fff;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 60%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-60deg, #f80e06, #d0d316, #23a6d5, #066966);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+ 
   }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   
   .game-column {
     flex: 1;
     padding: 20px;
   }
+
+  .Weapon_card{
+    border: 10px solid linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   
+  }
+ 
   
   .result-column {
     flex: 1;
@@ -45,11 +65,15 @@ body {
   }
   
   .weapon-button img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   
+  .weapon_Name{
+    font-size: 40px;
+    align-items: center;
+  }
   .result {
-    font-size: 24px;
+    font-size: 40px;
     color: #007BFF;
     margin-top: 20px;
   }
@@ -57,4 +81,38 @@ body {
   .player-info {
     margin: 20px 0;
   }
+  
+  .chosen-image{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+    
+  }
+  .chosen-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Game.css */
+/* Game.css */
+
+
+
+/* Game.css */
+
+
+
+.card-rotate {
+  transition: transform 0.5s;
+  background-position:left;
+  background-size: cover;
+  transform: rotate(360deg);
+}
+
+.card-rotate.flip {
+  transform: translateY(10px);
+}
+
+
+
+
   
